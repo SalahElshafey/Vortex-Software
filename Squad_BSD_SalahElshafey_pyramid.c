@@ -1,5 +1,30 @@
 
 #include<stdio.h>
+//pyramid with array
+
+int main()
+{
+    int i, j, hight;
+    int k = 0;
+    printf("please enter pyramid hight: ");
+    scanf("%d", &hight);
+    char str[41] = "";
+    hight *= 2;
+    for (i = hight; i > 0; i -= 2)
+    {
+        for (j = i/2-1; j > 0; j--)
+        {
+            strcat(str," ");
+        }
+        for (k = hight - (i-1); k > 0; k--)
+        {
+            strcat(str,"*");
+        }
+        strcat(str,"\n");
+    }
+    printf("%s", str);
+    return 0;
+}
 //pyramid with pattern
 int main(){
 int height;
@@ -67,6 +92,7 @@ for(int i=0;i<height;i++){
 }
 
 }
+
 
 
 
