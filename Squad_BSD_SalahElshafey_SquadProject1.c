@@ -73,7 +73,7 @@ else{
 if(Var.shape=='s'){
     square(Var.height);
 }else if(Var.shape=='R'){
-    R_traingle(Var.height);
+    R_triangle(Var.height);
 }else if(Var.shape=='P'){
     pyramid(Var.height);
 }else{
