@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-from re import I
-
-
 x=float(input("please enter num 1: "))
 y=input("please enter operator: ")
 factorial=1
@@ -17,8 +13,6 @@ if y=='!':
      print("factorual is: ",factorial)
 else:
  z=float(input("please enter num 2: "))
-
-
  if y=='+':
     print(x+z)
  elif y=='-':
@@ -27,21 +21,6 @@ else:
     print(x*z)
  elif y=='/':
         print(x/z)
+ 
  else:
-=======
-x=float(input("please enter num 1: "))
-y=input("please enter operator: ")
-z=float(input("please enter num 2: "))
-
-
-if y=='+':
-    print(x+z)
-elif y=='-':
-    print(x-z)
-elif y=='*':
-    print(x*z)
-elif y=='/':
-        print(x/z)
-else:
->>>>>>> d23591bd57ad0d327eb6090c960252343cf8ac97
     print("INvalid OPerator")
