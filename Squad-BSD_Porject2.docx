@@ -1,0 +1,17 @@
+Python Squad Project
+Team Members
+1.Salah Elshafey
+2.Nour Eldin Nassar
+3.Kirolos Shoukry
+4.Moez Rashed
+
+Project Offers:-
+IT 's a Hangman's game as program takes a random word from the tuple and the User tries to guess it.
+
+--IT was made by Google meet meeting
+
+
+Salah Elshafey:makes the tuple an inserted the random file for random guesses
+Nour Eldin Nasser: guesses the logic and we tried to perform it.
+Kirolos Shoukry:has helped with getting the print(f"",end" ") syntax that has helped alot.
+Moez Rashed:has helped with the logic with a code he have written
