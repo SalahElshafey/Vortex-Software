@@ -1,35 +1,27 @@
 import random
-myWords = {
-    1 : "elephant",
-    2 : "orange",
-    3 : "ant",
-    4 : "water",
-    5 : "earth"
-}
-guess = random.choice(myWords).lower()
-def check():
-    for i in guess:
-        if i in right:
-            print(i, end=' ')
-        else:
-            print('_', end=' ')
-    print ("\n")
-right = []
-wrong = []
-chances = 8
-while chances > 0 :
-    check()
-    letter = input ("Enter your guess : ").lower()
-    if letter in guess:
-        right.append(letter)
-        print("Nice guess, Go on!")
-        if len(right) == len(guess):
-            break
+hard_core_words=("water","orange","ant","grass")
+secret_word=random.choice(hard_core_words).lower()
+letters=""
+failcount= 8
+while failcount>0:
+    guess=input("Enter a letter: ")
+    if guess in secret_word:
+        print("Correct!")
+        letters=letters+guess
     else:
-        wrong.append(letter)
-        print ("Sorry, the word doesn't contain", letter,"you have",8-len(wrong),"guesses left")
-        chances-=1
-if chances == 0:
-    print ("GAME OVER!, your word was",guess.upper())
+        failcount-=1
+        print("Incorrect")
+    ##a
+    # letters=letters+guess
+    wrongletters= 0
+    for letter in secret_word:
+        if letter in letters:
+            print(f"{letter}",end=" ")
+        else:
+            print("_",end=" ")
+            wrongletters +=1
+    if wrongletters==0:
+        print(f"The word was {secret_word}")
+        break
 else:
-    print("Coungratulations! You have won, your word was", guess)
+    print("You Lost")
