@@ -1,7 +1,7 @@
 #define sw 12
-#define Red 9
-#define yellow 10
-#define Green 11
+#define Red 8
+#define yellow 7
+#define Green 4
 int c=0;
 void setup() {
   // put your setup code here, to run once:
